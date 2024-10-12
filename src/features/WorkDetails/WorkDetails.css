@@ -1,0 +1,39 @@
+.project-details .mask {
+  transform: rotate(320deg); /* Rotate the shape */
+  position: absolute;
+  right: -110px; /* Adjust based on your layout */
+  border-radius: 35% 27% 27% 35% / 50% 50% 50% 50%;
+  height: auto; /* Allow height to adjust based on content */
+  width: 100%; /* Adjust width of the mask */
+  overflow: hidden; /* Ensure content does not overflow */
+  top: -5em; /* Position it vertically */
+}
+
+@media (max-width: 992px) {
+  .project-details .mask {
+    width: 100%; /* Full width for smaller screens */
+    border-radius: 19% 27% 27% 19% / 50% 50% 50% 50%;
+    top: -7em; /* Adjust vertical position */
+    right: -150px; /* Adjust right position for smaller screens */
+  }
+}
+
+.asp {
+  position: relative;
+  width: 200%; /* Full width */
+  height: auto; /* Adjust to content */
+}
+
+.asp img {
+  position: relative; /* Allows for independent positioning */
+  transform: rotate(0deg); /* Keep the image upright */
+  width: 200%; /* Ensure the image takes full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover to fill the container */
+  /* Increase this value to move the image further up */
+  /* Add this to move the image to the right */
+}
+
+
+
+
